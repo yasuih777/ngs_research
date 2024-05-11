@@ -13,3 +13,10 @@ source ./config/shell_config.sh
 mkdir -p ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/
 prefetch --output-directory ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/ \
     --option-file ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/SRR_Acc_List.txt
+
+# install fasta file
+fasterq-dump ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/SRR* \
+    --outdir ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/ \
+    --temp ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/ \
+    --split-files \
+    --progress
