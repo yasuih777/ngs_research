@@ -85,8 +85,10 @@ bash shellsrc/utils/script_execute.sh {script path}
 
 ## Pipeline
 
-- [reference]: manage reference genome data to install: [link](./doc/reference_genome.md)
-- [gene expression]: gene expression analysis
+Execute everything except reference in numerical order 
+
+- [reference]: manage reference genome data to install: [code](./cli/reference/), [doc](./doc/reference_genome.md)
+- [gene expression]: gene expression analysis: [code](./cli/gene_expression/)
 
 # Development
 
