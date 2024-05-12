@@ -3,9 +3,9 @@
 # config valiable
 source ./config/shell_config.sh
 
-echo ${DATA_DIR}${REFERENCE_GENOME}/reference/${SPECIES}.IRGSP-1.0.cdna.all.fa
+echo ${utils_data_dir}${species_reference_genome}/reference/${species_name}.IRGSP-1.0.cdna.all.fa
 
-# create index file useing star tool
-mkdir -p ${DATA_DIR}${REFERENCE_GENOME}/reference/kallisto_index
-kallisto index -i ${DATA_DIR}${REFERENCE_GENOME}/reference/kallisto_index/kallisto.idx \
-    ${DATA_DIR}${REFERENCE_GENOME}/reference/${SPECIES}.IRGSP-1.0.cdna.all.fa
+# create index file useing kalisto tool
+mkdir -p ${utils_data_dir}${species_reference_genome}/reference/kallisto_index
+kallisto index -i ${utils_data_dir}${species_reference_genome}/reference/kallisto_index/kallisto.idx \
+    ${utils_data_dir}${species_reference_genome}/reference/${species_name}.IRGSP-1.0.cdna.all.fa

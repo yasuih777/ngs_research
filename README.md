@@ -1,5 +1,7 @@
 # Learning NGS analysis
 
+DRY analysis for Oryza sativa!
+
 # Requirement
 OS: Ubuntu 22.04.3 LTS
 
@@ -89,3 +91,4 @@ for Oryza sativa
 
 ## Environment
 - [Conda autoactivate](https://github.com/vallops99/Conda-autoactivate-env)
+- [parse_yaml](https://github.com/mrbaseman/parse_yaml): a simple yaml parser implemented in bash

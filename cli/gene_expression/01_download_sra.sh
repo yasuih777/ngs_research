@@ -10,13 +10,13 @@ before this script.
 source ./config/shell_config.sh
 
 # install sra files
-mkdir -p ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/
-prefetch --output-directory ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/ \
-    --option-file ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/SRR_Acc_List.txt
+mkdir -p ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/
+prefetch --output-directory ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/ \
+    --option-file ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/SRR_Acc_List.txt
 
 # install fasta file
-fasterq-dump ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/sra/SRR* \
-    --outdir ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/ \
-    --temp ${DATA_DIR}${REFERENCE_GENOME}/${GENOME_EXPRESSION}/data/ \
+fasterq-dump ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/SRR* \
+    --outdir ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/ \
+    --temp ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/ \
     --split-files \
     --progress
