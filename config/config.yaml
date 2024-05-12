@@ -1,6 +1,6 @@
 utils:
   data_dir: /mnt/f/ngs_research/
-  threads: 12
+  threads: 6
 species:
   name: Oryza_sativa
   reference_genome: IRGSP-1.0
