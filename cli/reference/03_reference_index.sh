@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # config variable
-source ./config/shell_config.sh
+source ./shellsrc/io/yaml_helper.sh
 
 echo ${utils_data_dir}${species_reference_genome}/reference/${species_name}.IRGSP-1.0.cdna.all.fa
 

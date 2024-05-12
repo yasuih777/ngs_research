@@ -7,7 +7,7 @@ before this script.
 '
 
 # config variable
-source ./config/shell_config.sh
+source ./shellsrc/io/yaml_helper.sh
 
 # install sra files
 mkdir -p ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/
