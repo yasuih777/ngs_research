@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# config valiable
+# config variable
 source ./config/shell_config.sh
 
 echo ${utils_data_dir}${species_reference_genome}/reference/${species_name}.IRGSP-1.0.cdna.all.fa

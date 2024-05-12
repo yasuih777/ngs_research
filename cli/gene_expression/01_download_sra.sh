@@ -6,7 +6,7 @@ and move to {mount drive}/ngs_research/IRGSP-1.0/genome_expression/data,
 before this script.
 '
 
-# config valiable
+# config variable
 source ./config/shell_config.sh
 
 # install sra files

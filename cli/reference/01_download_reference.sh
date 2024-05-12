@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# config valiable
+# config variable
 source ./shellsrc/io/yaml_helper.sh
 
-# local valiable
+# local variable
 URL=https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-58/
 
 # argments

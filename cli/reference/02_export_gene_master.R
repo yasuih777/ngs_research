@@ -4,7 +4,7 @@ library("biomaRt")
 library("dplyr")
 library("stringr")
 
-# valiables
+# variables
 ## dataset checked under snippet
 ## 1. ensembl <- biomaRt::useEnsembl(biomart=biomart, host=host)
 ## 2. biomaRt::listDatasets(ensembl)
