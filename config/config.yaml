@@ -4,6 +4,10 @@ utils:
 species:
   name: Oryza_sativa
   reference_genome: IRGSP-1.0
+  biomart:
+    biomart: plants_mart
+    dataset: osativa_eg_gene
+    host: https://plants.ensembl.org
 project:
   # analyze genome expression
   genome_expression:
