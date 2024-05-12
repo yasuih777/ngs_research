@@ -25,7 +25,7 @@ create_environment:
 
 .PHONY: export_environment
 export_environment:
-	conda env export -f environment.yaml
+	conda env export | grep -v "^prefix: " > environment.yaml
 
 .PHONY: mount_drive
 mount_drive:
