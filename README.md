@@ -69,6 +69,25 @@ make mount_drive
 > [!NOTE]
 > need to run as root user, so enter password (use `sudo`).
 
+# Usage
+
+1. activate conda environment
+```shell
+conda activate ngs_research
+```
+
+2. this project has multi format clis (shell script, R, Python), so support execute cli.
+    - {script path} in [`cli`](./cli/) directory.
+
+```shell
+bash shellsrc/utils/script_execute.sh {script path}
+```
+
+## Pipeline
+
+- [reference]: manage reference genome data to install: [link](./doc/reference_genome.md)
+- [gene expression]: gene expression analysis
+
 # Development
 
 ## Export conda environment
