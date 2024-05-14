@@ -21,40 +21,6 @@ make create_environment
 make install_conda_extra
 ```
 
-## Auto activate for conda environment
-1. kill activation of "base" environment
-```shell
-conda deactivate
-conda config --set auto_activate_base false
-```
-
-2. automate activation of project environment
-    1. make `.conda_config` and input {env-name} only
-    2. add special snippet in `~/.bashrc`
-    3. when you use `cd` to move project file, activate project environment
-
-edit `~/.bashrc`
-```shell
-vi ~/.bashrc
-```
-
-add this snippet
-```
-# >>> automatic conda activate >>>
-export CONDACONFIGDIR=""
-cd() { builtin cd "$@" &&
-if [ -f $PWD/.conda_config ]; then
-    export CONDACONFIGDIR=$PWD
-    conda activate $(cat .conda_config)
-elif [ "$CONDACONFIGDIR" ]; then
-    if [[ $PWD != *"$CONDACONFIGDIR"* ]]; then
-        export CONDACONFIGDIR=""
-        conda deactivate
-    fi
-fi }
-# >>> automatic conda activate >>>
-```
-
 ## External HDD
 genome data (FASTA format) have so big memory, so saved those in external HDD.
 
