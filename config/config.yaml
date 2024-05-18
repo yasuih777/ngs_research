@@ -13,3 +13,4 @@ project:
   genome_expression:
     name: genome_expression
     spr: SRP375151
+    upper_gene: 20

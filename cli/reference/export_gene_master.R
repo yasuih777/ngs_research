@@ -24,21 +24,18 @@ gene_master <- biomaRt::getBM(
         "ensembl_gene_id",
         "external_gene_name"),
     mart = mart
-) |>
-    dplyr::rename(
-    transcript_id = ensembl_transcript_id,
+) |> dplyr::rename(
+    target_id = ensembl_transcript_id,
     gene_id = ensembl_gene_id,
     gene_name = external_gene_name,
-) |>
-    dplyr::filter(gene_name != "")
+) |> dplyr::filter(gene_name != "")
 
 # saved master table
 write_path <- stringr::str_c(
     config$utils$data_dir,
     config$species$reference_genome,
-    "/reference/",
-    "gene_master.csv"
+    "/reference/gene_master.tsv"
 )
 
 log_info(stringr::str_c("Saved: master table: ", write_path))
-write.csv(gene_master, write_path, quote = FALSE, row.names = FALSE)
+write.table(gene_master, write_path, sep = "\t", row.names = FALSE)
