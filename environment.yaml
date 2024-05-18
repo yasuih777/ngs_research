@@ -29,10 +29,14 @@ dependencies:
   - bioconductor-genomeinfodbdata=1.2.9=r42hdfd78af_0
   - bioconductor-iranges=2.32.0=r42ha9d7317_1
   - bioconductor-keggrest=1.38.0=r42hdfd78af_0
+  - bioconductor-rhdf5=2.42.0=r42h20ea6f5_2
+  - bioconductor-rhdf5filters=1.10.0=r42hf17093f_1
+  - bioconductor-rhdf5lib=1.20.0=r42ha9d7317_2
   - bioconductor-s4vectors=0.36.0=r42ha9d7317_1
   - bioconductor-xvector=0.38.0=r42ha9d7317_1
   - bioconductor-zlibbioc=1.44.0=r42ha9d7317_2
   - bleach=6.1.0=pyhd8ed1ab_0
+  - boost-cpp=1.78.0=h5adbc97_2
   - brotli-python=1.1.0=py312h30efb56_1
   - bwidget=1.9.14=ha770c72_1
   - bzip2=1.0.8=hd590300_5
@@ -49,6 +53,7 @@ dependencies:
   - debugpy=1.8.1=py312h30efb56_0
   - decorator=5.1.1=pyhd8ed1ab_0
   - defusedxml=0.7.1=pyhd8ed1ab_0
+  - dsrc=2015.06.04=h21ec9f0_6
   - entrypoints=0.4=pyhd8ed1ab_0
   - exceptiongroup=1.2.0=pyhd8ed1ab_2
   - executing=2.0.1=pyhd8ed1ab_0
@@ -206,6 +211,7 @@ dependencies:
   - perl-xml-sax-base=1.09=pl5321hdfd78af_1
   - pexpect=4.9.0=pyhd8ed1ab_0
   - pickleshare=0.7.5=py_1003
+  - pigz=2.8=h2797004_0
   - pip=24.0=pyhd8ed1ab_0
   - pixman=0.43.2=h59595ed_0
   - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_1
@@ -227,6 +233,7 @@ dependencies:
   - pytz=2024.1=pyhd8ed1ab_0
   - pyyaml=6.0.1=py312h98912ed_1
   - pyzmq=26.0.3=py312h8fd38d8_0
+  - r-aggregation=1.0.1=r42hc72bb7e_1004
   - r-askpass=1.2.0=r42h57805ef_0
   - r-assertthat=0.2.1=r42hc72bb7e_4
   - r-backports=1.4.1=r42h57805ef_2
@@ -289,6 +296,7 @@ dependencies:
   - r-googledrive=2.1.1=r42hc72bb7e_1
   - r-googlesheets4=1.1.1=r42h785f33e_1
   - r-gower=1.0.1=r42h57805ef_1
+  - r-gridextra=2.3=r42hc72bb7e_1005
   - r-gtable=0.3.5=r42hc72bb7e_0
   - r-hardhat=1.3.1=r42hc72bb7e_0
   - r-haven=2.5.4=r42ha503ecb_0
@@ -324,6 +332,7 @@ dependencies:
   - r-maps=3.4.2=r42h57805ef_0
   - r-mass=7.3_60.0.1=r42h57805ef_0
   - r-matrix=1.6_5=r42h316c678_0
+  - r-matrixstats=1.3.0=r42h57805ef_0
   - r-memoise=2.0.1=r42hc72bb7e_2
   - r-mgcv=1.9_1=r42h316c678_0
   - r-mime=0.12=r42h57805ef_2
@@ -336,6 +345,7 @@ dependencies:
   - r-openssl=2.1.2=r42hd7d0243_0
   - r-parallelly=1.37.1=r42h57805ef_0
   - r-pbdzmq=0.3_11=r42hc2df49b_0
+  - r-pheatmap=1.0.12=r42hc72bb7e_4
   - r-pillar=1.9.0=r42hc72bb7e_1
   - r-pkgconfig=2.0.3=r42hc72bb7e_3
   - r-plogr=0.2.0=r42hc72bb7e_1005
@@ -381,6 +391,7 @@ dependencies:
   - r-selectr=0.4_2=r42hc72bb7e_3
   - r-shape=1.4.6.1=r42ha770c72_0
   - r-shiny=1.8.1.1=r42h785f33e_0
+  - r-sleuth=0.30.1=r42hdfd78af_0
   - r-sourcetools=0.1.7_1=r42ha503ecb_1
   - r-spatial=7.3_17=r42h57805ef_0
   - r-squarem=2021.1=r42hc72bb7e_2
@@ -425,6 +436,7 @@ dependencies:
   - six=1.16.0=pyh6c4a22f_0
   - sniffio=1.3.1=pyhd8ed1ab_0
   - soupsieve=2.5=pyhd8ed1ab_1
+  - spring=1.1.1=h4ac6f70_2
   - sra-tools=3.1.0=h4304569_1
   - stack_data=0.6.2=pyhd8ed1ab_0
   - sysroot_linux-64=2.12=he073ed8_17
