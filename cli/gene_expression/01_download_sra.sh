@@ -9,16 +9,15 @@ before this script.
 
 # config variable
 source ./shellsrc/io/yaml_helper.sh
-source ./shellsrc/io/pkg_helper.sh
 
 # install sra files
 mkdir -p ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/
-${prefetch} \
+prefetch \
     --output-directory ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/ \
     --option-file ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/SRR_Acc_List.txt
 
 # install fasta file
-${fasterq_dump} \
+fasterq-dump \
     ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/sra/SRR* \
     --outdir ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/ \
     --temp ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/ \
