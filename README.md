@@ -40,11 +40,18 @@ make install_kallisto
 
 # Usage
 
-1. this project has multi format clis (shell script, R, Python), so support execute cli.
+1. this project has multi format (shell script, R), so change command for execute cli.
     - {script path} in [`cli`](./cli/) directory.
 
+- execute shell script command
 ```shell
-bash shellsrc/utils/script_execute.sh {script path}
+bash {script path} {argments}
+```
+
+- execute R script command
+
+```shell
+Rscript {script path} {argments}
 ```
 
 ## Pipeline
