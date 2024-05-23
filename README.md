@@ -27,9 +27,11 @@ make install_r
 ```
 
 2. install shell command
-- reference genome install
+- common install
 ```shell
+make install_ubuntu_library
 make install_sratoolkit
+make install_fastqc
 ```
 - gene expressin
 ```shell

@@ -27,3 +27,13 @@ ${fasterq_dump} \
 
 # gzip fasta file
 pigz -p ${utils_threads} ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/*.fastq
+
+# quality chack
+mkdir -p ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/qc
+while read sample
+do
+    ${fastqc} -threads ${utils_threads} --nogroup \
+        --outdir ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/qc \
+        ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/${sample}_1.fastq.gz \
+        ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/${sample}_2.fastq.gz
+done < ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/data/SRR_Acc_List.txt

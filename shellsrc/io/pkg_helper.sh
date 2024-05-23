@@ -11,4 +11,5 @@ source ./shellsrc/io/yaml_helper.sh
 prefetch=${utils_data_dir}pkg/sratoolkit.3.1.0-centos_linux64/bin/prefetch
 fasterq_dump=${utils_data_dir}pkg/sratoolkit.3.1.0-centos_linux64/bin/fasterq-dump
 
-${fasterq_dump}
+# FastQC item
+fastqc=${utils_data_dir}pkg/FastQC/fastqc
