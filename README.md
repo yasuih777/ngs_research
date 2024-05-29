@@ -38,7 +38,7 @@ make install_pyenv
 make setup_python
 ```
 
-### install shell command
+### setup shell command
 - common install
 ```shell
 make install_ubuntu_library
@@ -51,7 +51,7 @@ make install_fastqc
 make install_hisat2
 ```
 
-**RSEM install**
+#### RSEM install
 
 1. RSEM install by clicked [Latent version] from https://deweylab.github.io/RSEM/
 2. move tar.gz file to MOUNT_PATH/PROJECT_NAME/pkg/
@@ -107,3 +107,4 @@ for Oryza sativa
 ## Environment
 - bash shell
     - [parse_yaml](https://github.com/mrbaseman/parse_yaml): a simple yaml parser implemented in bash
+        - used in [./shellsrc/io/parse_yaml.sh](./shellsrc/io/parse_yaml.sh)
