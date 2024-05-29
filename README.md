@@ -21,12 +21,24 @@ make mount_drive
 > need to run as root user, so enter password (use `sudo`).
 
 ## package setup
+### setup R
 1. install R
 ```shell
 make install_r
 ```
 
-2. install shell command
+2. install R library
+```shell
+Rscript rsrc/utils/renv_manager.R restor
+```
+
+### setup Python
+```shell
+make install_pyenv
+make setup_python
+```
+
+### install shell command
 - common install
 ```shell
 make install_ubuntu_library
@@ -34,9 +46,26 @@ make install_sratoolkit
 make install_fastqc
 ```
 - gene expressin
+
 ```shell
-make install_kallisto
+make install_hisat2
 ```
+
+**RSEM install**
+
+1. RSEM install by clicked [Latent version] from https://deweylab.github.io/RSEM/
+2. move tar.gz file to MOUNT_PATH/PROJECT_NAME/pkg/
+3. execute script
+
+```shell
+sudo tar -vxzf {MOUNT_PATH}/{PROJECT_NAME}/pkg/RSEM-{version}.tar.gz --directory {MOUNT_PATH}/{PROJECT_NAME}/pkg
+pushd {MOUNT_PATH}/{PROJECT_NAME}/pkg/RSEM-{version}
+sudo make install
+popd
+```
+
+* "MOUNT_PATH" and "PROJECT_NAME" are configulation parameter in [config.yaml](./config/config.yaml), "version" is RSEM version
+
 
 # Usage
 
