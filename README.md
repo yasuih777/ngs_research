@@ -107,4 +107,4 @@ for Oryza sativa
 ## Environment
 - bash shell
     - [parse_yaml](https://github.com/mrbaseman/parse_yaml): a simple yaml parser implemented in bash
-        - used in [./shellsrc/io/parse_yaml.sh](./shellsrc/io/parse_yaml.sh)
+        - used in [./shellsrc/utils/parse_yaml.sh](./shellsrc/utils/parse_yaml.sh)

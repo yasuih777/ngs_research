@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # config variable
-source ./shellsrc/io/yaml_helper.sh
+source ./shellsrc/utils/yaml_helper.sh
 
 # quant gene expression useing kalisto tool
 mkdir -p ${utils_data_dir}${species_reference_genome}/${project_genome_expression_name}/quant
