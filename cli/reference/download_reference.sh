@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # config variable
-source ./shellsrc/utils/yaml_helper.sh
+source ./shellsrc/io/yaml_helper.sh
 
 # local variable
 URL=https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-58

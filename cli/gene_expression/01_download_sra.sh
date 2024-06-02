@@ -8,7 +8,7 @@ before this script.
 '
 
 # config variable
-source ./shellsrc/utils/yaml_helper.sh
+source ./shellsrc/io/yaml_helper.sh
 source ./shellsrc/io/pkg_helper.sh
 
 # install sra files
