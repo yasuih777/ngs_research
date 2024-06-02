@@ -29,7 +29,7 @@ make install_r
 
 2. install R library
 ```shell
-Rscript rsrc/utils/renv_manager.R restor
+Rscript rsrc/utils/renv_manager.R restore
 ```
 
 ### setup Python
